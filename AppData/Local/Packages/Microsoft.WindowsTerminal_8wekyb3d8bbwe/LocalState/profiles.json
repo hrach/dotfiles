@@ -15,6 +15,10 @@
             "name": "Bash",
             "colorScheme": "Campbell",
             "commandline": "bash.cmd",
+            "fontFace" : "Fira Code",
+            "fontSize" : 11,
+            "historySize": 9001,
+            "icon": "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
             "hidden": false
         },
         {
