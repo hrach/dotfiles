@@ -1,0 +1,84 @@
+[user]
+	useconfigonly = true
+	email = hrach.cz@gmail.com
+	name = Jan Skrasek
+[core]
+	excludesfile = ~/.gitignore_global
+	fscache = true
+	editor = notepad++.exe -multiInst -notabbar -nosession -noPlugin
+	autocrlf = Input
+[color]
+	ui = auto
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[alias]
+	s = status
+	co = commit
+	ca = commit --amend
+	fixup = commit --amend
+	p = push
+	pf = push --force-with-lease
+	pu = push -u
+	b = branch -v
+	c = checkout
+	ch = checkout
+	l = log --pretty=format:'%Cred%h%Creset | %Cgreen%s%Creset [%ar by %an]'
+	g = log --all --graph --decorate --oneline
+	graph = log --all --graph --decorate --oneline
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	upstream = log --oneline master..origin/master
+	pending = log --oneline origin/master..master
+	pr = pull --rebase --prune
+	rc = rebase --continue
+	rs = rebase --skip
+	ra = rebase --abort
+	mt = mergetool
+	rim = rebase -i master
+	standup = "!git log --reverse --branches --since='$(if [[ Mon == $(date +%a) ]]; then echo last Friday; else echo yesterday; fi)' --author=$(git config --get user.email) --format=format:'%C(cyan) %ad %C(yellow)%h %Creset %s %Cgreen%d' --date=local"
+	showtrackedignored = ls-files -i --exclude-standard
+[mergetool]
+	prompt = false
+	keepBackup = false
+	keepTemporaries = false
+[merge]
+	tool = winmerge
+	ff = false
+[mergetool "winmerge"]
+	name = WinMerge
+	trustExitCode = true
+	cmd = winmergeu.exe \"$MERGED\"
+[diff]
+	tool = winmerge
+	algorithm = default
+	guitool = winmerge
+	indentHeuristic = true
+[difftool "winmerge"]
+	name = WinMerge
+	trustExitCode = true
+	cmd = winmergeu.exe -e -u \"$LOCAL\" \"$REMOTE\"
+[gui]
+	encoding = utf-8
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
+[push]
+	default = current
+[pull]
+	ff = only
+[credential]
+	helper = manager
+[sequence]
+	editor = rebase-editor.cmd --no-alternate-screen
+[rebase]
+	autoSquash = true
+	useBuiltin = true
+[stash]
+	useBuiltin = true
