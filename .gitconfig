@@ -21,7 +21,6 @@
 	s = status
 	co = commit
 	ca = commit --amend
-	fixup = commit --amend
 	p = push
 	pf = push --force-with-lease
 	pu = push -u
@@ -43,6 +42,7 @@
 	rim = rebase -i master
 	standup = "!git log --reverse --branches --since='$(if [[ Mon == $(date +%a) ]]; then echo last Friday; else echo yesterday; fi)' --author=$(git config --get user.email) --format=format:'%C(cyan) %ad %C(yellow)%h %Creset %s %Cgreen%d' --date=local"
 	showtrackedignored = ls-files -i --exclude-standard
+	optimize = !git prune && git gc --aggressive && git repack -a && git prune-packed
 [mergetool]
 	prompt = false
 	keepBackup = false
