@@ -10,7 +10,6 @@
     "profiles":
     [
         {
-            // Make changes here to the powershell.exe profile
             "guid": "{7ad1d3da-6169-4796-8b6a-24ce4d4ee2c1}",
             "name": "Bash",
             "colorScheme": "Campbell",
@@ -22,14 +21,23 @@
             "hidden": false
         },
         {
-            // Make changes here to the powershell.exe profile
+            "guid": "{744b85d0-95b5-4f7e-8960-92c12247decd}",
+            "name": "ZSH",
+            "colorScheme": "Campbell",
+            "commandline": "zsh.cmd",
+            "fontFace" : "Fira Code",
+            "fontSize" : 11,
+            "historySize": 9001,
+            "icon": "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
+            "hidden": false
+        },
+        {
             "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
             "name": "Windows PowerShell",
             "commandline": "powershell.exe",
             "hidden": true
         },
         {
-            // Make changes here to the cmd.exe profile
             "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
             "name": "cmd",
             "commandline": "cmd.exe",
