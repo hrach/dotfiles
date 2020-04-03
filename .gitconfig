@@ -40,6 +40,7 @@
 	ra = rebase --abort
 	mt = mergetool
 	rim = rebase -i master
+	rid = rebase -i develop
 	standup = "!git log --reverse --branches --since='$(if [[ Mon == $(date +%a) ]]; then echo last Friday; else echo yesterday; fi)' --author=$(git config --get user.email) --format=format:'%C(cyan) %ad %C(yellow)%h %Creset %s %Cgreen%d' --date=local"
 	showtrackedignored = ls-files -i --exclude-standard
 	optimize = !git prune && git gc --aggressive && git repack -a && git prune-packed
