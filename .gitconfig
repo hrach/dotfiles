@@ -2,6 +2,10 @@
 	useconfigonly = true
 	email = hrach.cz@gmail.com
 	name = Jan Skrasek
+[includeIf "gitdir:C:/storage/kiwi/"]
+	path = ~/.gitconfig-kiwi
+[includeIf "gitdir:D:/storage/kiwi/"]
+	path = ~/.gitconfig-kiwi
 [core]
 	excludesfile = ~/.gitignore_global
 	fscache = true
