@@ -10,6 +10,7 @@ alias composer='php /c/dev/php-composer/composer.phar'
 alias gui='git gui&'
 alias gitk='gitk --all &'
 alias cf='rm -rf temp/cache'
+alias adbrestart='adb kill-server && adb start-server'
 
 GIT_EXEC_PATH="$(git --exec-path 2>/dev/null)"
 COMPLETION_PATH="${GIT_EXEC_PATH%/libexec/git-core}"
