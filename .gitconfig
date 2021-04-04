@@ -2,6 +2,7 @@
 	useconfigonly = true
 	email = hrach.cz@gmail.com
 	name = Jan Skrasek
+	signingkey = 2ADB11EEB531C9BF
 [includeIf "gitdir:C:/storage/kiwi/"]
 	path = ~/.gitconfig-kiwi
 [includeIf "gitdir:D:/storage/kiwi/"]
@@ -87,3 +88,5 @@
 	useBuiltin = true
 [stash]
 	useBuiltin = true
+[commit]
+	gpgsign = true
