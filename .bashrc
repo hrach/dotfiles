@@ -11,6 +11,7 @@ alias gui='git gui&'
 alias gitk='gitk --all &'
 alias cf='rm -rf temp/cache'
 alias adbrestart='adb kill-server && adb start-server'
+alias a='cd /d/storage/kiwi/android'
 
 GIT_EXEC_PATH="$(git --exec-path 2>/dev/null)"
 COMPLETION_PATH="${GIT_EXEC_PATH%/libexec/git-core}"
