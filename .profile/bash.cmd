@@ -1,3 +1,3 @@
 @echo off
 set MSYS2_PATH_TYPE=inherit
-bash.exe --login -i
+C:\dev\msys64\usr\bin\bash.exe --login -i
