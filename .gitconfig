@@ -10,7 +10,7 @@
 [core]
 	excludesfile = ~/.gitignore_global
 	fscache = true
-	editor = notepad++.exe -multiInst -notabbar -nosession -noPlugin
+	editor = notepad.exe
 	autocrlf = Input
 [color]
 	ui = auto
