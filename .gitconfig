@@ -90,3 +90,5 @@
 	useBuiltin = true
 [commit]
 	gpgsign = true
+[gc]
+	auto = 0
