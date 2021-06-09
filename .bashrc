@@ -14,6 +14,7 @@ alias adbrestart='adb kill-server && adb start-server'
 alias a='cd /d/storage/kiwi/android'
 alias resetanim='adb shell settings put global window_animation_scale 1.0 && adb shell settings put global transition_animation_scale 1.0 && adb shell settings put global animator_duration_scale 1.0'
 alias slowanim='adb shell settings put global window_animation_scale 10.0 && adb shell settings put global transition_animation_scale 10.0 && adb shell settings put global animator_duration_scale 10.0'
+alias firebasedebug='adb shell setprop debug.firebase.analytics.app com.skypicker.main.debug'
 
 GIT_EXEC_PATH="$(git --exec-path 2>/dev/null)"
 COMPLETION_PATH="${GIT_EXEC_PATH%/libexec/git-core}"
