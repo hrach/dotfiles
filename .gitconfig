@@ -12,6 +12,7 @@
 	fscache = true
 	editor = notepad.exe
 	autocrlf = Input
+	sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
 [color]
 	ui = auto
 	diff = auto
