@@ -55,12 +55,16 @@
 	keepBackup = false
 	keepTemporaries = false
 [merge]
-	tool = winmerge
+	tool = idea
 	ff = false
 [mergetool "winmerge"]
 	name = WinMerge
 	trustExitCode = true
 	cmd = winmergeu.exe \"$MERGED\"
+[mergetool "idea"]
+	name = Idea
+	trustExitCode = false
+	cmd = idea.cmd merge $(cd $(dirname \"$LOCAL\") && pwd)/$(basename \"$LOCAL\") $(cd $(dirname \"$REMOTE\") && pwd)/$(basename \"$REMOTE\") $(cd $(dirname \"$BASE\") && pwd)/$(basename \"$BASE\") $(cd $(dirname \"$MERGED\") && pwd)/$(basename \"$MERGED\")
 [diff]
 	tool = winmerge
 	algorithm = default
