@@ -87,7 +87,7 @@
 [credential]
 	helper = manager
 [sequence]
-	editor = rebase-editor.cmd --no-alternate-screen
+	editor = rebase-editor.cmd -c --no-alternate-screen
 [rebase]
 	autoSquash = true
 	useBuiltin = true
