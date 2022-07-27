@@ -7,12 +7,14 @@
 	path = ~/.gitconfig-kiwi
 [includeIf "gitdir:D:/storage/kiwi/"]
 	path = ~/.gitconfig-kiwi
+[includeIf "gitdir:/Users/hrach/storage/kiwi/"]
+	path = ~/.gitconfig-kiwi
 [core]
 	excludesfile = ~/.gitignore_global
 	fscache = true
 	editor = notepad.exe
 	autocrlf = Input
-	sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
+#	sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
 [color]
 	ui = auto
 	diff = auto
@@ -94,6 +96,6 @@
 [stash]
 	useBuiltin = true
 [commit]
-	gpgsign = true
+	gpgsign = false
 [gc]
 	auto = 0
