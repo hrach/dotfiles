@@ -316,6 +316,54 @@
 				"type": "basic"
 			}
 		]
+		},
+		{
+		"description": "*",
+		"manipulators": [
+			{
+				"from": {
+					"key_code": "slash",
+					"modifiers": {"mandatory": ["right_option"]}
+				},
+				"to": {
+					"key_code": "8",
+					"modifiers": ["right_option"]
+				},
+				"type": "basic"
+			}
+		]
+		},
+		{
+		"description": "~",
+		"manipulators": [
+			{
+				"from": {
+					"key_code": "1",
+					"modifiers": {"mandatory": ["right_option"]}
+				},
+				"to": {
+					"key_code": "5",
+					"modifiers": ["right_option"]
+				},
+				"type": "basic"
+			}
+		]
+		},
+		{
+		"description": "win+l",
+		"manipulators": [
+			{
+				"from": {
+					"key_code": "l",
+					"modifiers": {"mandatory": ["left_option"]}
+				},
+				"to": {
+					"key_code": "q",
+					"modifiers": ["left_control", "left_command"]
+				},
+				"type": "basic"
+			}
+		]
 		}
 	]
 }
