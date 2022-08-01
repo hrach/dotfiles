@@ -364,6 +364,38 @@
 				"type": "basic"
 			}
 		]
+		},
+		{
+		"description": "alt+tab",
+		"manipulators": [
+			{
+				"from": {
+					"key_code": "tab",
+					"modifiers": {"mandatory": ["left_control"], "optional": ["shift"]}
+				},
+				"to": {
+					"key_code": "tab",
+					"modifiers": ["left_command"]
+				},
+				"type": "basic"
+			}
+		]
+		},
+		{
+		"description": "ctrl+tab",
+		"manipulators": [
+			{
+				"from": {
+					"key_code": "tab",
+					"modifiers": {"mandatory": ["left_command"], "optional": ["shift"]}
+				},
+				"to": {
+					"key_code": "tab",
+					"modifiers": ["left_control"]
+				},
+				"type": "basic"
+			}
+		]
 		}
 	]
 }
