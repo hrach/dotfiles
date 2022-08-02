@@ -350,6 +350,38 @@
 		]
 		},
 		{
+		"description": "`",
+		"manipulators": [
+			{
+				"from": {
+					"key_code": "quote",
+					"modifiers": {"mandatory": ["right_option"]}
+				},
+				"to": {
+					"key_code": "non_us_pound",
+					"modifiers": ["shift"]
+				},
+				"type": "basic"
+			}
+		]
+		},
+		{
+		"description": "` win",
+		"manipulators": [
+			{
+				"from": {
+					"key_code": "7",
+					"modifiers": {"mandatory": ["right_option"]}
+				},
+				"to": {
+					"key_code": "non_us_pound",
+					"modifiers": ["shift"]
+				},
+				"type": "basic"
+			}
+		]
+		},
+		{
 		"description": "win+l",
 		"manipulators": [
 			{
