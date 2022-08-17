@@ -207,6 +207,22 @@
 		]
 		},
 		{
+		"description": "' hw keyboard",
+		"manipulators": [
+			{
+				"from": {
+					"key_code": "backslash",
+					"modifiers": {"mandatory": ["shift"]}
+				},
+				"to": {
+					"key_code": "quote",
+					"modifiers": ["right_option"]
+				},
+				"type": "basic"
+			}
+		]
+		},
+		{
 		"description": "$",
 		"manipulators": [
 			{
