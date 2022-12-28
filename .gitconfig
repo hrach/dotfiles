@@ -47,7 +47,7 @@
 	rs = rebase --skip
 	ra = rebase --abort
 	mt = mergetool
-	rim = "!git rebase -i $(if git rev-parse --verify develop > /dev/null 2> /dev/null; then echo "develop"; elif git rev-parse --verify main > /dev/null 2> /dev/null ; then echo "main"; else echo "master"; fi)"
+	rim = "!git rebase -i $(if git rev-parse --verify main > /dev/null 2> /dev/null; then echo "main"; else echo "master"; fi)"
 	rid = rebase -i develop
 	standup = "!git log --reverse --branches --since='$(if [[ Mon == $(date +%a) ]]; then echo last Friday; else echo yesterday; fi)' --author=$(git config --get user.email) --format=format:'%C(cyan) %ad %C(yellow)%h %Creset %s %Cgreen%d' --date=local"
 	showtrackedignored = ls-files -i --exclude-standard
@@ -79,9 +79,10 @@
 [gui]
 	encoding = utf-8
 [filter "lfs"]
-	clean = git lfs clean %f
-	smudge = git lfs smudge %f
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
 	required = true
+	process = git-lfs filter-process
 [push]
 	default = current
 [pull]
@@ -99,3 +100,5 @@
 	gpgsign = false
 [gc]
 	auto = 0
+[init]
+	defaultBranch = main
