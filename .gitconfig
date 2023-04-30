@@ -12,7 +12,7 @@
 [core]
 	excludesfile = ~/.gitignore_global
 	fscache = true
-	editor = notepad.exe
+	editor = nano
 	autocrlf = Input
 #	sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
 [color]
@@ -90,7 +90,7 @@
 [credential]
 	helper = manager
 [sequence]
-	editor = rebase-editor.cmd -c --no-alternate-screen
+	editor = rebase-editor -c --no-alternate-screen
 [rebase]
 	autoSquash = true
 	useBuiltin = true
@@ -102,3 +102,5 @@
 	auto = 0
 [init]
 	defaultBranch = main
+[branch]
+	autosetuprebase = always
