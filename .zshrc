@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH="~/Library/Java/JavaVirtualMachines/azul-11:/opt/homebrew/bin:/Users/hrach/Library/Android/sdk/platform-tools:/opt/homebrew/opt/openssl@3/bin:${PATH}"
+export PATH="~/Library/Java/JavaVirtualMachines/azul-18:/opt/homebrew/bin:/Users/hrach/Library/Android/sdk/platform-tools:/opt/homebrew/opt/openssl@3/bin:${PATH}"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -105,7 +105,7 @@ alias ls='ls --color=auto'
 alias ll='ls -la --color=auto'
 alias grep='grep --color=auto'
 alias cidist='git commit --allow-empty -m "ci-dist"'
-alias composer='php /c/dev/php-composer/composer.phar'
+#alias composer='php /c/dev/php-composer/composer.phar'
 alias gui='git gui&'
 alias gitk='gitk --all &'
 alias cf='rm -rf temp/cache'
@@ -117,3 +117,6 @@ alias noanim='adb shell settings put global window_animation_scale 0.0 && adb sh
 alias firebasedebug='adb shell setprop debug.firebase.analytics.app com.skypicker.main.debug'
 
 source ~/.zshrc-local
+
+export HOMEBREW_NO_GOOGLE_ANALYTICS=1
+export ANDROID_HOME=/Users/hrach/Library/Android/sdk
