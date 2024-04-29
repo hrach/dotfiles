@@ -9,6 +9,8 @@
 	path = ~/.gitconfig-kiwi
 [includeIf "gitdir:/Users/hrach/storage/kiwi/"]
 	path = ~/.gitconfig-kiwi
+[includeIf "gitdir:/Users/hrach/storage/hotstar/"]
+	path = ~/.gitconfig-hotstar
 [core]
 	excludesfile = ~/.gitignore_global
 	fscache = true
