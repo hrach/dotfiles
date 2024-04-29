@@ -49,7 +49,7 @@
 	rs = rebase --skip
 	ra = rebase --abort
 	mt = mergetool
-	rim = "!git rebase -i $(if git rev-parse --verify main > /dev/null 2> /dev/null; then echo "main"; else echo "master"; fi)"
+	rim = "!git rebase -i $(if git rev-parse --verify development > /dev/null 2> /dev/null; then echo "development"; elif git rev-parse --verify main > /dev/null 2> /dev/null; then echo "main"; else echo "master"; fi)"
 	rid = rebase -i develop
 	standup = "!git log --reverse --branches --since='$(if [[ Mon == $(date +%a) ]]; then echo last Friday; else echo yesterday; fi)' --author=$(git config --get user.email) --format=format:'%C(cyan) %ad %C(yellow)%h %Creset %s %Cgreen%d' --date=local"
 	showtrackedignored = ls-files -i --exclude-standard
