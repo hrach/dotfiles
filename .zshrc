@@ -115,8 +115,10 @@ alias resetanim='adb shell settings put global window_animation_scale 1.0 && adb
 alias slowanim='adb shell settings put global window_animation_scale 10.0 && adb shell settings put global transition_animation_scale 10.0 && adb shell settings put global animator_duration_scale 10.0'
 alias noanim='adb shell settings put global window_animation_scale 0.0 && adb shell settings put global transition_animation_scale 0.0 && adb shell settings put global animator_duration_scale 0.0'
 alias firebasedebug='adb shell setprop debug.firebase.analytics.app com.skypicker.main.debug'
+alias icat="kitten icat"
 
 source ~/.zshrc-local
 
-export HOMEBREW_NO_GOOGLE_ANALYTICS=1
+# export HOMEBREW_NO_GOOGLE_ANALYTICS=1
+export HOMEBREW_NO_AUTO_UPDATE=1
 export ANDROID_HOME=/Users/hrach/Library/Android/sdk
