@@ -94,8 +94,10 @@
 [sequence]
 	editor = rebase-editor -c --no-alternate-screen
 [rebase]
-	autoSquash = true
 	useBuiltin = true
+	autoSquash = true
+	autoStash = true
+	updateRefs = true
 [stash]
 	useBuiltin = true
 [commit]
