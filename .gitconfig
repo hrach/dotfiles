@@ -3,14 +3,8 @@
 	email = hrach.cz@gmail.com
 	name = Jan Skrasek
 	signingkey = 2ADB11EEB531C9BF
-[includeIf "gitdir:C:/storage/kiwi/"]
-	path = ~/.gitconfig-kiwi
-[includeIf "gitdir:D:/storage/kiwi/"]
-	path = ~/.gitconfig-kiwi
-[includeIf "gitdir:/Users/hrach/storage/kiwi/"]
-	path = ~/.gitconfig-kiwi
-[includeIf "gitdir:/Users/hrach/storage/hotstar/"]
-	path = ~/.gitconfig-hotstar
+[includeIf "gitdir:/Users/hrach/storage/rohlik/"]
+	path = ~/.gitconfig-rohlik
 [core]
 	excludesfile = ~/.gitignore_global
 	fscache = true
