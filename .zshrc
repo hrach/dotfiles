@@ -116,6 +116,7 @@ alias slowanim='adb shell settings put global window_animation_scale 10.0 && adb
 alias noanim='adb shell settings put global window_animation_scale 0.0 && adb shell settings put global transition_animation_scale 0.0 && adb shell settings put global animator_duration_scale 0.0'
 alias firebasedebug='adb shell setprop debug.firebase.analytics.app com.skypicker.main.debug'
 alias icat="kitten icat"
+alias fuckadb="killall -9 adb && killall -9 adb && killall -9 adb"
 
 source ~/.zshrc-local
 
