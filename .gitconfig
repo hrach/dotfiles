@@ -55,6 +55,7 @@
 [merge]
 	tool = idea
 	ff = false
+	conflictstyle = zdiff3
 [mergetool "winmerge"]
 	name = WinMerge
 	trustExitCode = true
@@ -81,6 +82,12 @@
 	process = git-lfs filter-process
 [push]
 	default = current
+	autoSetupRemote = true
+	followTags = true
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
 [pull]
 	ff = only
 [credential]
@@ -92,6 +99,9 @@
 	autoSquash = true
 	autoStash = true
 	updateRefs = true
+[rerere]
+	enabled = true
+	autoupdate = true
 [stash]
 	useBuiltin = true
 [commit]
@@ -102,3 +112,6 @@
 	defaultBranch = main
 [branch]
 	autosetuprebase = always
+        sort = -committerdate
+[tag]
+        sort = version:refname
