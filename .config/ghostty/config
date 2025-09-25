@@ -1,2 +1,3 @@
 theme=heeler
-
+cursor-style=bar
+keybind = shift+enter=text:\x1b\r
