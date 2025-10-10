@@ -115,3 +115,6 @@
         sort = -committerdate
 [tag]
         sort = version:refname
+[spice "branchCreate"]
+	commit = false
+	prefix = js/
