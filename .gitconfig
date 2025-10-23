@@ -118,3 +118,5 @@
 [spice "branchCreate"]
 	commit = false
 	prefix = js/
+[spice "shorthand"]
+	co = branch checkout
