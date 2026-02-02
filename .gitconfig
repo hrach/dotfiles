@@ -120,3 +120,5 @@
 	prefix = js/
 [spice "shorthand"]
 	co = branch checkout
+[spice "submit.reviewers"]
+	addWhen = ready
