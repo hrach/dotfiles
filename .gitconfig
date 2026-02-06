@@ -39,9 +39,9 @@
 	upstream = log --oneline master..origin/master
 	pending = log --oneline origin/master..master
 	pr = pull --rebase --prune
-	rc = rebase --continue
-	rs = rebase --skip
-	ra = rebase --abort
+	rbc = rebase --continue
+	rbs = rebase --skip
+	rba = rebase --abort
 	mt = mergetool
 	rim = "!git rebase -i $(if git rev-parse --verify develop > /dev/null 2> /dev/null; then echo "develop"; elif git rev-parse --verify main > /dev/null 2> /dev/null; then echo "main"; else echo "master"; fi)"
 	rid = rebase -i develop
