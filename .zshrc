@@ -118,6 +118,7 @@ alias noanim='adb shell settings put global window_animation_scale 0.0 && adb sh
 alias firebasedebug='adb shell setprop debug.firebase.analytics.app com.skypicker.main.debug'
 alias icat="kitten icat"
 alias fuckadb="killall -9 adb && killall -9 adb && killall -9 adb"
+alias gs='git-spice'
 
 source ~/.zshrc-local
 
