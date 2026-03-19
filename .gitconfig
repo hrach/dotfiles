@@ -93,7 +93,7 @@
 [credential]
 	helper = manager
 [sequence]
-	editor = rebase-editor -c --no-alternate-screen
+	editor = ~/storage/hrach/git-rebase-editor/git-rebase-editor
 [rebase]
 	useBuiltin = true
 	autoSquash = true
