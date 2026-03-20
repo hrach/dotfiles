@@ -4,5 +4,7 @@ font-size=14
 cursor-style=bar
 keybind = shift+enter=text:\x1b\r
 window-inherit-working-directory=false
+tab-inherit-working-directory=false
+split-inherit-working-directory=true
 window-show-tab-bar=always
 macos-titlebar-style=tabs
