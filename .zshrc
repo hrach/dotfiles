@@ -76,6 +76,17 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+# Hide git prompt info for the home directory repo
+functions[__orig_git_prompt_info]=$functions[git_prompt_info]
+git_prompt_info() {
+  local toplevel
+  toplevel=$(command git rev-parse --show-toplevel 2>/dev/null)
+  if [ "$toplevel" = "$HOME" ]; then
+    return
+  fi
+  __orig_git_prompt_info "$@"
+}
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -119,6 +130,17 @@ alias firebasedebug='adb shell setprop debug.firebase.analytics.app com.skypicke
 alias icat="kitten icat"
 alias fuckadb="killall -9 adb && killall -9 adb && killall -9 adb"
 alias gs='git-spice'
+
+# Prevent git commands on home repo from nested directories
+git() {
+  local toplevel
+  toplevel=$(command git rev-parse --show-toplevel 2>/dev/null)
+  if [ "$toplevel" = "$HOME" ] && [ "$PWD" != "$HOME" ]; then
+    echo "Error: refusing git on home repo from nested dir ($PWD)"
+    return 1
+  fi
+  command git "$@"
+}
 
 source ~/.zshrc-local
 
