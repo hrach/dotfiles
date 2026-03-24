@@ -76,6 +76,10 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+# Show full directory path in prompt (override robbyrussell's %c with %~)
+PROMPT="%(?:%{$fg_bold[green]%}%1{➜%} :%{$fg_bold[red]%}%1{➜%} ) %{$fg[cyan]%}%~%{$reset_color%}"
+PROMPT+=' $(git_prompt_info)'
+
 # Hide git prompt info for the home directory repo
 functions[__orig_git_prompt_info]=$functions[git_prompt_info]
 git_prompt_info() {
