@@ -139,7 +139,7 @@ alias gs='git-spice'
 git() {
   local toplevel
   toplevel=$(command git rev-parse --show-toplevel 2>/dev/null)
-  if [ "$toplevel" = "$HOME" ] && [ "$PWD" != "$HOME" ]; then
+  if [ "$toplevel" = "$HOME" ] && [ "$PWD" != "$HOME" ] && [ "$1" != "clone" ]; then
     echo "Error: refusing git on home repo from nested dir ($PWD)"
     return 1
   fi
