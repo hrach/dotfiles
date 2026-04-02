@@ -134,6 +134,7 @@ alias firebasedebug='adb shell setprop debug.firebase.analytics.app com.skypicke
 alias icat="kitten icat"
 alias fuckadb="killall -9 adb && killall -9 adb && killall -9 adb"
 alias gs='git-spice'
+alias mc='TERM=xterm-256color mc'
 
 # Prevent git commands on home repo from nested directories
 git() {
