@@ -153,3 +153,4 @@ source ~/.zshrc-local
 export HOMEBREW_NO_AUTO_UPDATE=1
 export ANDROID_HOME=/Users/hrach/Library/Android/sdk
 export MPC_SERVER_CONFIG=~/.mcp_servers.json
+export DOCKER_HOST="unix://${HOME}/.colima/default/docker.sock"
